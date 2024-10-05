@@ -18,10 +18,17 @@ void draw ()
   ellipseMode(CENTER);
   ellipse(50,140,20,20);
   noStroke();
-  rectMode(CENTER);
-  rect(x,y,130,20);
-  fill(0);
+  if ((mouseX > x||mouseX < x+130)&&(mouseY>y||mouseY<=y+20)){
+    fill(32,71,167);
+    //rectMode(CENTER);
+    rect(x,y,130,20);
+    }
+  else{
+    fill(255);
+    //rectMode(CENTER);
+    rect(x,y,130,20);
+  }
+  fill(255);
   ellipseMode(CENTER);
-  ellipse(x,y,50,50);
+ // ellipse(x,y,50,50);
 }
-if (=<mouseX
